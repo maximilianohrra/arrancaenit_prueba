@@ -2,7 +2,7 @@
 FROM ubuntu
 
 # Copia el script Bash al contenedor
-COPY miproyecto.sh /app/miproyecto.sh
+COPY miprojecto.sh /app/miproyecto.sh
 
 # Establece el directorio de trabajo en /app
 WORKDIR /app
@@ -11,5 +11,5 @@ WORKDIR /app
 RUN chmod +x miproyecto.sh
 
 # Ejecuta el script Bash en segundo plano
-CMD ["./miprojecto.sh"]
+CMD ["./miproyecto.sh"]
 
